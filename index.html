@@ -110,11 +110,11 @@
             '<form id="login-form" action="auth" method="POST">' +
             '<div class="text-white ml-4 mr-4 pt-4 pb-4 pr-5 pl-5 rounded-lg " style="background-color: whitesmoke;">' +
             '<main class="form-signin w-100 m-auto" style="color: #00C9FF;">' +
-            '<h6 class="mb-3 fw-normal">Humano:</h6>' +
+            '<h6 class="mb-3 fw-normal">人类:</h6>' +
             '<div class="form-floating">' +
             '<input type="text" name="humano" value="RZX Technology" style="color:#f87d6a" class="form-control" id="humanoInput" placeholder="Humano" minlength="18" maxlength="18">' +
             '<div class="form-floating mt-3 mb-3">' +
-            '<div class="m-3"><h6 for="floatingInput ">Contraseña:</h6></div>' +
+            '<div class="m-3"><h6 for="floatingInput ">密码:</h6></div>' +
             '<input type="password" name="contraseña" style="color:#f87d6a" class="form-control" id="floatingPassword" minlength="8" maxlength="20" placeholder="*********">' +
             '</div>' +
             '</div>' +
@@ -148,7 +148,7 @@
             console.log("Contraseña ingresada: ", password);
   
             if (humano === 'RZX Technology' && password === 'human') {
-              Swal.fire('Bienvenido', 'Has ingresado correctamente', 'success');
+              Swal.fire('欢迎', '您已成功登录', 'success');
               document.getElementById('content').style.display = 'block'; // Muestra el elemento con id 'content'
             } else {
               console.log("Usuario o contraseña incorrectos");
